@@ -1,0 +1,312 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.cont {
+    /* this navbar full */
+    /* background-color: #0f1035; */
+    border-radius: 10px;
+    height: auto;
+    font-size: 18px;
+    padding: 3px;
+  }
+
+/* Custom CSS to change toggle icon color to white */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+} */
+
+.navbar-brand {
+    padding-top: 6px;
+    width: 170px;
+    height: auto !important;
+    /* background-color: aqua; */
+}
+
+  /* header container */
+  .cont{
+    
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .navbar-nav {
+    margin: auto; /* Center the navbar-nav */
+  }
+  .collapse.navbar-collapse {
+    border-radius: 10px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 50px; /* Add margin between navbar items */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #0f1035;
+  }
+  
+  .navbar-nav .nav-link.active:hover {
+    /* this is to when the home list is hover it changes to white */
+    background-color: #0f1035;
+    color: #FCDAB7;
+    /* color: #fff; */
+    /* background-color: #686D76; */
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  .navbar-nav .nav-link.active:hover .bi {
+    color: #FCDAB7; /* Change icon color to #0F1035 when hovered */
+  }
+  
+/* header part css ends */
+
+/* carousel part css */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    background: none;
+    padding: 20px;
+    overflow:visible;
+    max-height: 300px; /* Adjust based on your needs */
+}
+
+/* slideshow */
+.carousel {
+  background-color: #fff;
+    height: 300px;
+    overflow: hidden; /* Ensures that any overflow is hidden */
+}
+
+
+.car-item {
+    height: 100%;
+    position: relative; /* Ensure proper positioning for the background gradient */
+}
+
+.car-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
+}
+
+.car-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 500%;
+    /* background-image: linear-gradient(rgba(57, 57, 57, 0.851), rgba(87, 87, 87, 0.75)); Background gradient */
+    z-index: 1; /* Ensure the gradient is behind the content */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    max-height: fit-content;
+    width: 80%;
+    max-width: 600px;
+    z-index: 2; /* Ensure the caption is above the gradient */
+}
+
+@media (max-width: 991.98px) {
+    .carousel{
+        height: 500px;
+    }
+    .car-item {
+        height: auto;
+        max-height: fit-content;
+       
+    }
+    .carousel-caption{
+        height: auto;
+        max-width: auto !important;
+    }
+
+    .carousel-caption h5,p{
+      font-size:10px;
+    }
+    .carousel-caption button{
+      height: 30px;
+      width: auto;
+      font-size: small;
+      justify-content: center;
+      top: 0;
+    }
+
+    #carouselExampleCaptions{
+      height: auto;
+      width: auto;
+    }
+}
+
+
+.dropdown-item:hover{
+    background-color: #FCDAB7;
+    color: #0f1035;
+    border-radius: 10px;
+}
+
+
+#carouselExampleCaptions{
+  height: auto;
+  width: auto;
+}
+
+
+
+
+
+/* preloader starts */
+
+
+
+#preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+#preloader img {
+  width: 100%;
+  
+  transform: rotate(-45deg);
+  width: 200px;
+  height: auto;
+}
+
+#content {
+  display: none;
+}
+
+/* preloader ends */
+
+.readmore-btn:hover{
+  background-color: #0f1035;
+  color: #FCDAB7;
+
+}
+
+.card-outline{
+  border: none;
+}
+
+.body-outline{
+  box-shadow: 0px 6px 7px -1px rgba(0,0,0,0.55);
+-webkit-box-shadow: 0px 6px 7px -1px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 6px 7px -1px rgba(0,0,0,0.55);
+border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head{
+  /* background-color: #FCDAB7; */
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+
+.line {
+  width: 80%; /* Default width for smaller screens */
+  max-width: 500px; /* Maximum width */
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 10px; /* Adjust this value to add space between the heading and the line */
+}
+
+/* Media query for tablets */
+@media (min-width: 600px) {
+  .line {
+      width: 70%; /* Adjust width for tablets */
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 900px) {
+  .line {
+      width: 60%; /* Adjust width for desktops */
+  }
+}
+
+/* testimontal-cont */
+
+.testimonial-container {
+  margin-top: 50px;
+}
+
+.testimonial-container h2 {
+  margin-bottom: 30px;
+}
+
+.testimonial-container .card {
+  border: none; /* Optional: Removes card border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for better appearance */
+  transition: transform 0.3s ease;
+}
+.testimonial-container .card:hover{
+  transform: scale(1.05);
+  cursor:pointer;
+}
+
+.testimonial-container .card-body {
+  text-align: center; /* Centers the text */
+}
+
+.testimonial-container .card-text {
+  font-style: italic; /* Makes the testimonial text italic */
+}
+
+/* about us */
+.about-container{
+  /* background-color: aqua; */
+  width: 100% !important;
+}
+
+.about-container img{
+  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for better appearance */
+}
+
+
+.content-container .row-container{
+  /* background-color: #FCDAB7; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+footer{
+  background-color: darkgray;
+}

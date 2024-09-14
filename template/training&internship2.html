@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training&Internship</title>
+    <!-- goggle fonts ends here -->
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/training&internship.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <img src="{% static 'img/gif-dribbb.gif' %}" alt="Loading..." />
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container cont">
+          <a class="navbar-brand" href="/"
+            ><img src="{% static 'img/final0306242.png' %}" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Programme
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/internship1/">Training & Interships</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/workshops/">Workshop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/publication/">Publication</a></li>
+                  <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                  <li><a class="dropdown-item" href="/manuscript/">Manuscripts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- the header ends here -->
+    <div class="img-container">
+        <img src="{% static 'img/dna1.jpg' %}" class="img-fluid" alt="DNA Image">
+    </div>
+
+    <div class="container content-container">
+        <div class="row row-container">
+          <div class="h3">Authoring your research paper into a publishable manuscript.</div>
+          <div class="list-unstyled">
+            <li>
+              The Publishing process can be a daunting task. At Pubrica, we translate your research writing into a publishable manuscript. We guide you through the entire life cycle of your publication, including identifying the most suitable journal, executing the peer review, manuscript editing, statistical review and provide post-submission support.</li>
+              <ul>
+                <li>Our team is made up of 400+ professionals and editors in Science, Technology, and Management (STEM), and we offer end-to-end support.Our experts will work with you to improve your manuscript and the scope of our work would encompass journal selection to citation booster and everything in between.</li>
+                <li>We provide assistance in publishing your manuscript in peer-reviewed journals through several value-added Publication Support Services.</li>
+                <li>We ensure your manuscript content is succinct, structured, and cohesive, by following the International Committee of Medical Journal Editors, ICMJE guidelines.</li>
+                <li>We select, review, prepare, submit your manuscript, and respond to editorial comments.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="container content-container">
+        <div class="row row-container">
+          <div class="h3">Objective</div>
+          <div class="list-unstyled">
+            <li>
+              The Publishing process can be a daunting task. At Pubrica, we translate your research writing into a publishable manuscript. We guide you through the entire life cycle of your publication, including identifying the most suitable journal, executing the peer review, manuscript editing, statistical review and provide post-submission support.</li>
+              <ul>
+                <li>Our team is made up of 400+ professionals and editors in Science, Technology, and Management (STEM), and we offer end-to-end support.Our experts will work with you to improve your manuscript and the scope of our work would encompass journal selection to citation booster and everything in between.</li>
+                <li>We provide assistance in publishing your manuscript in peer-reviewed journals through several value-added Publication Support Services.</li>
+                <li>We ensure your manuscript content is succinct, structured, and cohesive, by following the International Committee of Medical Journal Editors, ICMJE guidelines.</li>
+                <li>We select, review, prepare, submit your manuscript, and respond to editorial comments.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+  <!-- nav tabs for offline and online training $ interships style="border: none;" -->
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <nav>
+        <div class="nav nav-pills my-3 flex-column flex-sm-row nav-justified">
+          <a href="/internship1/" class="nav-link " style="border: 1px solid lightskyblue;">OFFLINE</a>
+          <a href="/internship2/" class="nav-link" style="border: 1px solid lightskyblue;">ONLINE</a>
+        </div>
+      </nav>
+      <nav>
+        <div class="nav nav-pills flex-column flex-sm-row nav-justified my-5">
+          <a href="#firsttraining" id="first" data-bs-toggle="tab" role="tab" class="nav-link active">30-days Training</a>
+          <a href="#secondtraining" id="second" data-bs-toggle="tab" role="tab" class="nav-link">15-days Training</a>
+          <a href="#thirdtraining" id="third" data-bs-toggle="tab" role="tab" class="nav-link">7-days Training</a>
+        </div>
+      </nav>
+
+      <div class="tab-content">
+        <div class="tab-pane show active" id="firsttraining">
+          <table class="table-content">
+            <tr>
+              <th colspan="2" class="h3" style="background-color:silver ;text-align: center;">Training informations</th>
+            </tr>
+
+            <tr>
+              <td><strong>Period of Training</strong></td>
+              <td>Offline/Online - 30 days
+                30 days program will involve all the three modules program will involve two modules. Module I is mandatory in both the programs.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Course Fee</strong></td>
+              <td>For course fee please request you to contact us at info@arraygen.com</td>
+            </tr>
+
+            <tr>
+              <td><strong>Training Starting Date</strong></td>
+              <td>Our training is one to one and training can also be started anydate as per the candidate convenience.
+                Our working Time is 9:00 AM to 6:00 PM Indian Time
+                Available slots - 9:00 AM to 11:00 AM / 11:00 AM to 1:00 PM / 2:00 PM to 4:00 PM / 4:00 PM to 6:00 PM
+                However you can discuss your availability time slot with us and if it will be feasible based on both convenience it will be scheduled accordingly. We do provide weekends schedule.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Training Mode</strong></td>
+              <td>Online/Offline
+                Online(For online training candidate have to install Skype and AnyDesk / ZOOM )(it is same like offline) Offline(For offline training candidate have to come to head office Pune and bring their own laptop).
+                All our training is one to one and 100% focus with individual candidate which provides 100% learning.</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="send-enquiry"><a href="/internform/"><button type="submit" class="btn btn-primary">SEND ENQUIRY</button></a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="tab-pane" id="secondtraining">
+          <table class="table-content">
+            <tr>
+              <th colspan="2" class="h3" style="background-color:silver ;text-align: center;">Training informations2</th>
+            </tr>
+
+            <tr>
+              <td><strong>Period of Training</strong></td>
+              <td>Offline/Online - 30 days
+                30 days program will involve all the three modules program will involve two modules. Module I is mandatory in both the programs.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Course Fee</strong></td>
+              <td>For course fee please request you to contact us at info@arraygen.com</td>
+            </tr>
+
+            <tr>
+              <td><strong>Training Starting Date</strong></td>
+              <td>Our training is one to one and training can also be started anydate as per the candidate convenience.
+                Our working Time is 9:00 AM to 6:00 PM Indian Time
+                Available slots - 9:00 AM to 11:00 AM / 11:00 AM to 1:00 PM / 2:00 PM to 4:00 PM / 4:00 PM to 6:00 PM
+                However you can discuss your availability time slot with us and if it will be feasible based on both convenience it will be scheduled accordingly. We do provide weekends schedule.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Training Mode</strong></td>
+              <td>Online/Offline
+                Online(For online training candidate have to install Skype and AnyDesk / ZOOM )(it is same like offline) Offline(For offline training candidate have to come to head office Pune and bring their own laptop).
+                All our training is one to one and 100% focus with individual candidate which provides 100% learning.</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="send-enquiry"><a href="/internform/"><button type="submit" class="btn btn-primary">SEND ENQUIRY</button></a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="tab-pane" id="thirdtraining">
+          <table class="table-content">
+            <tr>
+              <th colspan="2" class="h3" style="background-color:silver ;text-align: center;">Training informations3</th>
+            </tr>
+
+            <tr>
+              <td><strong>Period of Training</strong></td>
+              <td>Offline/Online - 30 days
+                30 days program will involve all the three modules program will involve two modules. Module I is mandatory in both the programs.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Course Fee</strong></td>
+              <td>For course fee please request you to contact us at info@arraygen.com</td>
+            </tr>
+
+            <tr>
+              <td><strong>Training Starting Date</strong></td>
+              <td>Our training is one to one and training can also be started anydate as per the candidate convenience.
+                Our working Time is 9:00 AM to 6:00 PM Indian Time
+                Available slots - 9:00 AM to 11:00 AM / 11:00 AM to 1:00 PM / 2:00 PM to 4:00 PM / 4:00 PM to 6:00 PM
+                However you can discuss your availability time slot with us and if it will be feasible based on both convenience it will be scheduled accordingly. We do provide weekends schedule.</td>
+            </tr>
+
+            <tr>
+              <td><strong>Training Mode</strong></td>
+              <td>Online/Offline
+                Online(For online training candidate have to install Skype and AnyDesk / ZOOM )(it is same like offline) Offline(For offline training candidate have to come to head office Pune and bring their own laptop).
+                All our training is one to one and 100% focus with individual candidate which provides 100% learning.</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="send-enquiry"><a href="/internform/"><button type="submit" class="btn btn-primary">SEND ENQUIRY</button></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- cards 2 -->
+
+
+
+ <!-- footer  -->
+
+    <footer>
+        <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="row h3"><div class="col">CONTACT INFORMATION</div></div>
+            <div class="row"><div class="col"><em>ArrayGen Technologies Pvt. Ltd. VTP Trade Park , Second Floor , Office No.237, Above KFC,Near Undri Chowk, Katraj-Hadapsar Bypass Road,Undri, Pune - 411060 , Maharashtra (India).</em></div></div>
+            <div class="row"> <div class="col"><strong>Skype</strong>:arraygen</div></div>
+            <div class="row"> <div class="col"><strong>Tel-No</strong>:+91-020-67026274</div></div>
+            <div class="row"> <div class="col"><strong>E-Mail</strong>:info@arraygen.com</div></div>
+          </div>
+    
+          <div class="col-md-3 offset-0 col-sm-12">
+            
+            <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="/internship1/" class="nav-link p-0 text-body-secondary">Training & Intership</a></li>
+            <li class="nav-item mb-2"><a href="/workshops/" class="nav-link p-0 text-body-secondary">Workshop</a></li>
+            <li class="nav-item mb-2"><a href="/publication/" class="nav-link p-0 text-body-secondary">Publication</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">study Abroad</a></li>
+            <li class="nav-item mb-2"><a href="/manuscript/" class="nav-link p-0 text-body-secondary">Manuscripts</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              </ul>
+        
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter-x"></i></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-facebook"></i></svg></a></li>
+          </ul>
+        </div>
+      </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script>
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        setTimeout(function () {
+          preloader.style.display = "none";
+          content.style.display = "block";
+        },1500); // 3000 milliseconds = 3 seconds
+      });
+    </script>
+  </body>
+</html>
