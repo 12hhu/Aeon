@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- goggle fonts ends here -->
+    <title>Workshop</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/workshoppg.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust as needed */
+  }
+  
+  /* Additional styling to prevent flickering */
+  .dropdown-menu {
+    margin-top: 0; /* Ensures the dropdown menu stays aligned */
+    transition: all 0.2s ease-in-out;
+  }
+  /* Remove dropdown arrow */
+  .navbar .dropdown-toggle::after {
+    display: none;
+  }
+  </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <img src="{% static 'img/gif-dribbb.gif' %}" alt="Loading..." />
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container cont">
+          <a class="navbar-brand" href="/"
+            ><img src="{% static 'img/final0306242.png' %}" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about/">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Programme
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/internship1/">Training & Interships</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/workshops/">Workshop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/publication/">Publication</a></li>
+                  <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                  <li><a class="dropdown-item" href="/manuscript/">Manuscripts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contactus/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- the header ends here -->
+
+
+
+
+
+    
+<!-- content part start here workshop -->
+
+<div class="container container-head">
+  {% for i in desc %}
+<div class="card shadow p-3 mb-5 bg-body-tertiary rounded revealtop" >
+
+  <div class="card-body">
+    <div class="card-title lead ">
+      <strong>{{i.title}}</strong>
+    </div>
+    <div class="card-text">
+      {{i.description}}
+    </div>
+    <a href="/workshopform/"><div class="btn-primary btn mt-2">APPLY</div></a>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+<div class="tid"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="row h3"><div class="col">CONTACT INFORMATION</div></div>
+            <div class="row"><div class="col"><em>ArrayGen Technologies Pvt. Ltd. VTP Trade Park , Second Floor , Office No.237, Above KFC,Near Undri Chowk, Katraj-Hadapsar Bypass Road,Undri, Pune - 411060 , Maharashtra (India).</em></div></div>
+            <div class="row"> <div class="col"><strong>Skype</strong>:arraygen</div></div>
+            <div class="row"> <div class="col"><strong>Tel-No</strong>:+91-020-67026274</div></div>
+            <div class="row"> <div class="col"><strong>E-Mail</strong>:info@arraygen.com</div></div>
+          </div>
+    
+          <div class="col-md-3 offset-0 col-sm-12">
+            
+            <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="/about/" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                <li class="nav-item mb-2"><a href="/internship1/" class="nav-link p-0 text-body-secondary">Training & Intership</a></li>
+                <li class="nav-item mb-2"><a href="/workshops/" class="nav-link p-0 text-body-secondary">Workshop</a></li>
+                <li class="nav-item mb-2"><a href="/publication/" class="nav-link p-0 text-body-secondary">Publication</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">study Abroad</a></li>
+                <li class="nav-item mb-2"><a href="/manuscript/" class="nav-link p-0 text-body-secondary">Manuscripts</a></li>
+                <li class="nav-item mb-2"><a href="/contactus/" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+              </ul>
+        
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter-x"></i></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-facebook"></i></svg></a></li>
+          </ul>
+        </div>
+      </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script>
+    // this is for the preloader script
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        setTimeout(function () {
+          preloader.style.display = "none";
+          content.style.display = "block";
+        },1500); // 3000 milliseconds = 3 seconds
+      });
+
+                // scroll animation js
+    ScrollReveal().reveal('.revealtop', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'top',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.revealleft', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'left',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.revealright', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'right',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.zoom-in', {
+    duration: 3000,
+    scale: 0.85,
+    reset: true
+  });
+
+  ScrollReveal().reveal('.revealbottom', {
+    duration: 1500,
+    distance:'50px',
+    origin:'bottom',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.revealrightdelay', { 
+    duration: 5000,
+    distance: '50px',
+    origin: 'right',
+    reset: true
+    });
+
+    </script>
+  </body>
+</html>

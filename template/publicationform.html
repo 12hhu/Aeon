@@ -1,0 +1,464 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PublicationForm</title>
+    <!-- goggle fonts ends here -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.cont {
+    /* this navbar full */
+    /* background-color: #0f1035; */
+    border-radius: 10px;
+    height: auto;
+    font-size: 18px;
+    padding: 3px;
+  }
+
+/* Custom CSS to change toggle icon color to white */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+} */
+
+.navbar-brand {
+    padding-top: 6px;
+    width: 170px;
+    height: auto !important;
+    /* background-color: aqua; */
+}
+
+  /* header container */
+  .cont{
+    
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .navbar-nav {
+    margin: auto; /* Center the navbar-nav */
+  }
+  .collapse.navbar-collapse {
+    border-radius: 10px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 50px; /* Add margin between navbar items */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #0f1035;
+  }
+  
+  .navbar-nav .nav-link.active:hover {
+    /* this is to when the home list is hover it changes to white */
+    background-color: #0f1035;
+    color: #FCDAB7;
+    /* color: #fff; */
+    /* background-color: #686D76; */
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  .navbar-nav .nav-link.active:hover .bi {
+    color: #FCDAB7; /* Change icon color to #0F1035 when hovered */
+  }
+  
+/* header part css ends */
+
+/* preloader starts */
+
+
+
+#preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+  }
+  
+  #preloader img {
+    width: 100%;
+    
+    transform: rotate(-45deg);
+    width: 200px;
+    height: auto;
+  }
+  
+  #content {
+    display: none;
+  }
+  
+  /* preloader ends */
+
+  
+footer{
+    background-color: darkgray;
+  }
+
+
+  .img-container {
+    height: 400px;
+    width: 100%;
+    max-width: 1500px;
+    background-color: black;
+    overflow: hidden; /* Ensures that anything overflowing the container is hidden */
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  }
+
+  .content-container .row-container{
+    /* background-color: #FCDAB7; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* form css */
+
+/* forms  */
+.containermain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.box-container input, .box-container select, .box-container textarea, .box-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.box-container button {
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.box-container button:hover {
+    background-color: #333;
+}
+
+/* forms ends here */
+
+
+
+      .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust as needed */
+  }
+  
+  /* Additional styling to prevent flickering */
+  .dropdown-menu {
+    margin-top: 0; /* Ensures the dropdown menu stays aligned */
+    transition: all 0.2s ease-in-out;
+  }
+  /* Remove dropdown arrow */
+  .navbar .dropdown-toggle::after {
+    display: none;
+  }
+  
+  </style>
+  <body>
+    <div id="preloader">
+      <img src="{% static 'img/gif-dribbb.gif' %}" alt="Loading..." />
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container cont">
+          <a class="navbar-brand" href="/"
+            ><img src="{% static 'img/final0306242.png' %}" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about/">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Programme
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/internship1/">Training & Interships</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/workshops/">Workshop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/publication/">Publication</a></li>
+                  <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                  <li><a class="dropdown-item" href="/manuscript/">Manuscripts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contactus/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- the header ends here -->
+
+
+
+    <!-- form for mansuscripts -->
+    <div class="container containermain">
+      <div class="box-container my-4 py-3 zoom-in">
+        <form method="POST">
+          {% csrf_token %}
+          <h2>Publication Form</h2>
+          {% if err %}
+          <div class="alert alert-danger">
+          {{ err }}
+          </div>
+          {% elif ps %}
+          <div class="alert alert-danger">
+          {{ ps}}
+          </div>
+          {% endif %}
+          {% if success %}
+            <div class="alert alert-success">
+            {{ success }}
+            </div>
+            {% endif %}
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="tel" name="phone" placeholder="+91 " pattern="[0-9]{10,}" title="Please enter a valid phone number with at least 10 digits" required>
+          <select name="profession" required>
+              <option value="" disabled selected>Profession</option>
+              <option value="student">Student</option>
+              <option value="faculty">Faculty</option>
+              <option value="researcher">Researcher</option>
+              <option value="other">Other</option>
+          </select>
+          <input type="text" name="institute" placeholder="Institute Name/College Name" required>
+          <select name="state" required>
+            <option value="" disabled selected>State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+          <textarea name="queries" placeholder="Add Queries" rows="4"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        
+      </div>
+  </div>
+
+
+
+  <!-- footer  -->
+
+  <footer>
+    <div class="container py-5">
+    <div class="row">
+      <!-- contact infor column -->
+      <div class="col-md-4 col-sm-12">
+        <div class="row h3"><div class="col">CONTACT INFORMATION</div></div>
+        <div class="row"><div class="col"><em>ArrayGen Technologies Pvt. Ltd. VTP Trade Park , Second Floor , Office No.237, Above KFC,Near Undri Chowk, Katraj-Hadapsar Bypass Road,Undri, Pune - 411060 , Maharashtra (India).</em></div></div>
+        <div class="row"> <div class="col"><strong>Skype</strong>:arraygen</div></div>
+        <div class="row"> <div class="col"><strong>Tel-No</strong>:+91-020-67026274</div></div>
+        <div class="row"> <div class="col"><strong>E-Mail</strong>:info@arraygen.com</div></div>
+      </div>
+
+      <div class="col-md-3 offset-0 col-sm-12">
+        
+        <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="/about/" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="/internship1/" class="nav-link p-0 text-body-secondary">Training & Intership</a></li>
+            <li class="nav-item mb-2"><a href="/workshops/" class="nav-link p-0 text-body-secondary">Workshop</a></li>
+            <li class="nav-item mb-2"><a href="/publication/" class="nav-link p-0 text-body-secondary">Publication</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">study Abroad</a></li>
+            <li class="nav-item mb-2"><a href="/manuscript/" class="nav-link p-0 text-body-secondary">Manuscripts</a></li>
+            <li class="nav-item mb-2"><a href="/contactus/" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          </ul>
+    
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter-x"></i></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-facebook"></i></svg></a></li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+
+    <script>
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        setTimeout(function () {
+          preloader.style.display = "none";
+          content.style.display = "block";
+        },1500); // 3000 milliseconds = 3 seconds
+      });
+
+
+          // scroll animation js
+    ScrollReveal().reveal('.revealtop', { 
+    duration: 5000,
+    distance: '50px',
+    origin: 'top',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.revealleft', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'left',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.revealright', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'right',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.zoom-in', {
+    duration: 3000,
+    scale: 0.85,
+    reset: true
+  });
+
+  ScrollReveal().reveal('.revealbottom', {
+    duration: 1500,
+    distance:'50px',
+    origin:'bottom',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.revealrightdelay', { 
+    duration: 5000,
+    distance: '50px',
+    origin: 'right',
+    reset: true
+    });
+    </script>
+  </body>
+</html>

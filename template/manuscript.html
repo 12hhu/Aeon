@@ -1,0 +1,343 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuscript</title>
+    <!-- goggle fonts ends here -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="{% static 'css/manuscript.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust as needed */
+  }
+  
+  /* Additional styling to prevent flickering */
+  .dropdown-menu {
+    margin-top: 0; /* Ensures the dropdown menu stays aligned */
+    transition: all 0.2s ease-in-out;
+  }
+  /* Remove dropdown arrow */
+  .navbar .dropdown-toggle::after {
+    display: none;
+  }
+  </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <img src="{% static 'img/gif-dribbb.gif' %}" alt="Loading..." />
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container cont">
+          <a class="navbar-brand" href="/"
+            ><img src="{% static 'img/final0306242.png' %}" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about/">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Programme
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/internship1/">Training & Interships</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/workshops/">Workshop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/publication/">Publication</a></li>
+                  <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                  <li><a class="dropdown-item" href="/manuscript/">Manuscripts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contactus/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- the header ends here -->
+
+    <div class="img-container">
+        <img src="{% static 'img/dna1.jpg' %}" class="img-fluid " alt="DNA Image">
+    </div>
+
+
+    <div class="container content-container ">
+        <div class="row row-container revealright">
+          <div class="h3">Authoring your research paper into a publishable manuscript.</div>
+          <div class="list-unstyled">
+            <li>
+              The Publishing process can be a daunting task. At Pubrica, we translate your research writing into a publishable manuscript. We guide you through the entire life cycle of your publication, including identifying the most suitable journal, executing the peer review, manuscript editing, statistical review and provide post-submission support.</li>
+              <ul>
+                <li>Our team is made up of 400+ professionals and editors in Science, Technology, and Management (STEM), and we offer end-to-end support.Our experts will work with you to improve your manuscript and the scope of our work would encompass journal selection to citation booster and everything in between.</li>
+                <li>We provide assistance in publishing your manuscript in peer-reviewed journals through several value-added Publication Support Services.</li>
+                <li>We ensure your manuscript content is succinct, structured, and cohesive, by following the International Committee of Medical Journal Editors, ICMJE guidelines.</li>
+                <li>We select, review, prepare, submit your manuscript, and respond to editorial comments.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container content-container revealright">
+        <div class="row row-container">
+          <div class="h3">REASONS FOR REJECTION
+            SOLUTION
+            PUBRICA SOLUTION.</div>
+          <div class="list-unstyled">
+            <li>Will ensure to increase the probability of acceptance of the manuscript.</li>
+              <ul>
+                <li>Out of Scope: Manuscript failed to meet the journal aim, scope and guidelines</li>
+                <li>Our experts will throughly understand the scope of the journal & ensure the topic of the manuscript fulfils the journal requirement..</li>
+                <li>We ensure your manuscript content is succinct, structured, and cohesive, by following the International Committee of Medical Journal Editors, ICMJE guidelines.</li>
+                <li>We select, review, prepare, submit your manuscript, and respond to editorial comments.</li>
+              </ul>
+          </div>
+          <div class="list-unstyled">
+            <li>Journal Selection</li>
+              <ul>
+                <li>Improper rationale: Failed to meet scientific rigour</li>
+                <li>Identify the clear purpose of the research, advances made, research ethics, a title that is not descriptive, lack of up-t-date references or references containing a high proportion of self-citations, design and methodology, data analysis, results & discussion.</li>
+              </ul>
+          </div>
+          <div class="list-unstyled">
+            <li>Pre-submission Peer Review</li>
+              <ul>
+                <li>Inappropriate or incomplete statistics: Issues in data validity & accuracy</li>
+                <li>Including sample size, hypotheses confirmation, application of statistical principles, logical & structured presentation of data</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      
+
+<!-- form for mansuscripts -->
+<div class="container containermain">
+  <div class="box-container my-4 py-3 zoom-in">
+    <form method="POST">
+      {% csrf_token %}
+      <h2>mansuscript Form</h2>
+      {% if err %}
+      <div class="alert alert-danger">
+      {{ err }}
+      </div>
+      {% elif ps %}
+      <div class="alert alert-danger">
+      {{ ps}}
+      </div>
+      {% endif %}
+      {% if success %}
+        <div class="alert alert-success">
+        {{ success }}
+        </div>
+        {% endif %}
+      <input type="text" name="username" placeholder="Username" class="revealbottom" required>
+      <input type="email" name="email" placeholder="E-mail" class="revealbottom" required>
+      <input type="tel" name="phone" placeholder="+91 " class="revealbottom" pattern="[0-9]{10,}" title="Please enter a valid phone number with at least 10 digits" required>
+      <select name="profession" class="revealbottom" required>
+          <option value="" disabled selected>Profession</option>
+          <option value="student">Student</option>
+          <option value="faculty">Faculty</option>
+          <option value="researcher">Researcher</option>
+          <option value="other">Other</option>
+      </select>
+      <input type="text" name="institute" class="revealbottom" placeholder="Institute Name/College Name" required>
+      <select name="state" class="revealbottom" required>
+        <option value="" disabled selected>State</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+      </select>
+      <textarea name="queries" class="revealbottom" placeholder="Add Queries" rows="4"></textarea>
+      <button type="submit" class="revealbottom">Submit</button>
+    </form>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <!-- footer  -->
+
+  <footer>
+    <div class="container py-5">
+    <div class="row">
+      <!-- contact infor column -->
+      <div class="col-md-4 col-sm-12">
+        <div class="row h3"><div class="col">CONTACT INFORMATION</div></div>
+        <div class="row"><div class="col"><em>ArrayGen Technologies Pvt. Ltd. VTP Trade Park , Second Floor , Office No.237, Above KFC,Near Undri Chowk, Katraj-Hadapsar Bypass Road,Undri, Pune - 411060 , Maharashtra (India).</em></div></div>
+        <div class="row"> <div class="col"><strong>Skype</strong>:arraygen</div></div>
+        <div class="row"> <div class="col"><strong>Tel-No</strong>:+91-020-67026274</div></div>
+        <div class="row"> <div class="col"><strong>E-Mail</strong>:info@arraygen.com</div></div>
+      </div>
+
+      <div class="col-md-3 offset-0 col-sm-12">
+        
+        <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="/about/" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="/internship1/" class="nav-link p-0 text-body-secondary">Training & Intership</a></li>
+            <li class="nav-item mb-2"><a href="/workshops/" class="nav-link p-0 text-body-secondary">Workshop</a></li>
+            <li class="nav-item mb-2"><a href="/publication/" class="nav-link p-0 text-body-secondary">Publication</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">study Abroad</a></li>
+            <li class="nav-item mb-2"><a href="/manuscript/" class="nav-link p-0 text-body-secondary">Manuscripts</a></li>
+            <li class="nav-item mb-2"><a href="/contactus/" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          </ul>
+    
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter-x"></i></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-facebook"></i></svg></a></li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+
+    <script>
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        setTimeout(function () {
+          preloader.style.display = "none";
+          content.style.display = "block";
+        },1500); // 3000 milliseconds = 3 seconds
+      });
+
+        // scroll animation js
+    ScrollReveal().reveal('.revealtop', { 
+    duration: 5000,
+    distance: '50px',
+    origin: 'top',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.revealleft', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'left',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.revealright', { 
+    duration: 2500,
+    distance: '50px',
+    origin: 'right',
+    reset: true
+    });
+
+    ScrollReveal().reveal('.zoom-in', {
+    duration: 2500,
+    scale: 0.85,
+    reset: true
+  });
+
+  ScrollReveal().reveal('.revealbottom', {
+    duration: 1500,
+    distance:'50px',
+    origin:'bottom',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.revealrightdelay', { 
+    duration: 5000,
+    distance: '50px',
+    origin: 'right',
+    reset: true
+    });
+
+    
+    </script>
+  </body>
+</html>
